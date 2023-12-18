@@ -1,143 +1,45 @@
-var searchForm = document.querySelector('.search-form');
-document.querySelector('#search-btn').onclick = () =>{
-    searchForm.classList.toggle('active');
-}
-
-let loginForm = document.querySelector('.login-form-container');
-document.querySelector('#login-btn').onclick = () =>{
-    loginForm.classList.toggle('active');
-}
-document.querySelector('#close-login-btn').onclick = () =>{
-    loginForm.classList.remove('active');
-}
-
-window.onscroll = () =>{
-    searchForm.classList.remove('active');
-
-    if(window.scrollY > 80){
-        document.querySelector('.header .header-2').classList.add('active');
-    } else{
-        document.querySelector('.header .header-2').classList.remove('active');
-    }
-}
-
-window.onload = () =>{
-    if(window.scrollY > 80){
-        document.querySelector('.header .header-2').classList.add('active');
-    } else{
-        document.querySelector('.header .header-2').classList.remove('active');
-    }
-}
-
-var swiper = new Swiper(".books-slider", {
-    loop: true,
+var swiper = new Swiper('.home-slider', {
+    slidesPerView: 'auto',
     centeredSlides: true,
+    spaceBetween: 10,
+    loop: true,
     autoplay: {
-        delay: 3500,
+        delay: 3000,
         disableOnInteraction: false,
     },
-    breakpoints: {
-      0: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
+    effect: 'coverflow', // Gunakan efek 'coverflow' untuk mendapatkan tampilan kartu
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 50,
+        depth: 900,
+        modifier: 1,
+        slideShadows: false,
     },
+    speed: 500,
 });
 
-var swiper = new Swiper(".featured-slider", {
+var swiper = new Swiper('.featured-slider', {
     spaceBetween: 10,
     loop: true,
     centeredSlides: true,
-    autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 50,
+        depth: 900,
+        modifier: 1,
+        slideShadows: false,
     },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 2,
-      },
-      450: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 3,
-      },
-      1024: {
-        slidesPerView: 4,
-      },
+    slidesPerView: 'auto', // Menggunakan 'auto' agar tidak terlalu banyak slide yang terlihat
+    preventInteractionOnTransition: true, // Menghentikan interaksi pengguna selama transisi slide
+    on: {
+        slideChange: function () {
+            // Memeriksa apakah sudah mencapai slide terakhir
+            if (swiper.isEnd) {
+                // Kembali ke slide pertama setelah mencapai ujung
+                swiper.slideTo(0, 0);
+            }
+        },
     },
 });
 
-var swiper = new Swiper(".arrivals-slider", {
-  spaceBetween: 10,
-  loop: true,
-  centeredSlides: true,
-  autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});
 
-var swiper = new Swiper(".reviews-slider", {
-  spaceBetween: 10,
-  grabCursor: true,
-  loop: true,
-  centeredSlides: true,
-  autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});
-
-var swiper = new Swiper(".blogs-slider", {
-  spaceBetween: 10,
-  grabCursor: true,
-  loop: true,
-  centeredSlides: true,
-  autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});

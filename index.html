@@ -4,29 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Perpustakaan Online</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title> Tech Books </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- custom css file link-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/swiper.css" />
+
 </head>
 <body>
-
     <!-- header section starts -->
     <header class="header">
         <div class="header-1">
-            <a href="#" class="logo"><i class="fas fa-book"></i> bookly </a>
+            <img src="image/logo.png" alt="">
+            <span class="logo-text"> Tech Books </span>
             <form action="" class="search-form">
                 <input type="search" name="" placeholder="search here..." id="search-box">
-                <label for="search-box" class="fas fa-search"></label>
+                <label for="search-box" class="search-icon fas fa-search"></label>
             </form>
-            <div class="icons">
-                <div id="search-btn" class="fas fa-search"></div>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <div id="login-btn" class="fas fa-user"></div>
-            </div>
         </div>
         <div class="header-2">
             <nav class="navbar">
@@ -38,546 +34,242 @@
             </nav>
         </div>
     </header>
-<!-- header section ends -->
-
-<!-- bottom navbar -->
-<nav class="bottom-navbar">
-    <a href="#home" class="fas fa-home"></a>
-    <a href="#featured" class="fas fa-list"></a>
-    <a href="#arrivals" class="fas fa-tags"></a>
-    <a href="#reviews" class="fas fa-comments"></a>
-    <a href="#blogs" class="fas fa-blogs"></a>
-</nav>
-
-<!-- login form -->
-<div class="login-form-container">
-    <div id="close-login-btn" class="fas fa-times"></div>
-    <form action="">
-        <h3>sign in</h3>
-        <span>username</span>
-        <input type="email" name="" class="box" placeholder="enter your email" id="">
-        <span>password</span>
-        <input type="password" name="" class="box" placeholder="enter your password" id="">
-        <div class="checkbox">
-            <input type="checkbox" name="remember-me" id="remember-me">
-            <label for="remember-me"> remember-me </label>
-        </div>
-        <input type="submit" value="sign in" class="btn">
-        <p>forget password ? <a href="#">click here</a></p>
-        <p>don't have an account ? <a href="#">create one</a></p>
-    </form>
-</div>
+    <!-- header section ends -->
 
 <!-- home section strats -->
 <section class="home" id="home">
     <div class="row">
         <div class="content">
             <h3>upto 75% off</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis corporis ratione repellendus consequatur asperiores placeat in, reiciendis ad.</p>
-            <a herf="#" class="btn">shop now</a>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         </div>
-        <div class="swiper books-slider">
-            <div class="swiper-wrapper">
-                <a href="#" class="swiper-slide"><img src="image/book-1.png" alt=""></a> 
-                <a href="#" class="swiper-slide"><img src="image/book-2.png" alt=""></a> 
-                <a href="#" class="swiper-slide"><img src="image/book-3.png" alt=""></a> 
-                <a href="#" class="swiper-slide"><img src="image/book-4.png" alt=""></a> 
-                <a href="#" class="swiper-slide"><img src="image/book-5.png" alt=""></a> 
-                <a href="#" class="swiper-slide"><img src="image/book-6.png" alt=""></a> 
+        <div class= "swiper-container home-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="image/7 in 1 Pemrograman Web Tingkat Lanjut.png" alt="Slide image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/Html Php & MySQL untuk Pemula.png" alt="Slide image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/Kitab Hacker.png" alt="Slide image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/Membuat Aplikasi Android Tanpa Coding.png" alt="Slide image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/Tingkatkan Profit Trading dengan ChatGPT.png" alt="Slide image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/Python untuk Programmer Pemula.png" alt="Slide image">
+                    </div>
+                </div>
             </div>
-            <img src="image/stand.png" class="stand" alt="">
-            </div>
-         </div>
+        </div>
+    </div>
 </section>
 <!-- home section ense -->
 
 <!-- icons section strats -->
 <section class="featured" id="featured">
     <h1 class="heading"> <span>featured books</span> </h1>
-    <div class="swiper featured-slider">
+    <div class="swiper-container featured-slider">
         <div class="swiper-wrapper">
             <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
                 <div class="image">
-                    <img src="image/buku-7.png" alt="">
+                    <img src="image/Python untuk Programmer Pemula.png" alt="">
                 </div>
                 <div class="content">
-                    <h3>featured books</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <a href="#" class="btn">add to cart</a>
+                    <h3>Python untuk Programmer Pemula</h3>
+                    <div class="price">59.840 <span>74.800</span></div>
+                    <button id="infoButton" type="button" onclick="location.href='https://www.gramedia.com/products/python-untuk-programmer-pemula?queryID=04099f8cc30bbed8600066823116e5bf'">
+                        more info
+                    </button>
                 </div>
             </div>
             <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
                 <div class="image">
-                    <img src="image/buku-8.png" alt="">
+                    <img src="image/7 in 1 Pemrograman Web Tingkat Lanjut.png" alt="">
                 </div>
                 <div class="content">
-                    <h3>featured books</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <a href="#" class="btn">add to cart</a>
+                    <h3>7 in 1 Pemrograman Web Tingkat Lanjut</h3>
+                    <div class="price">59.840 <span>74.800</span></div>
+                    <button id="infoButton" type="button" onclick="location.href='https://www.gramedia.com/products/7-in-1-pemrograman-web-tingkat-lanjut?queryID=475fcb19342d2db1882a3cee6334fe0f'">
+                        more info
+                    </button>
                 </div>
             </div>
             <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
                 <div class="image">
-                    <img src="image/buku-9.png" alt="">
+                    <img src="image/Algoritma Pemrograman Dan Struktur Data Menggunakan C++.png" alt="">
                 </div>
                 <div class="content">
-                    <h3>featured books</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <a href="#" class="btn">add to cart</a>
+                    <h3>Algoritma Pemrograman Dan Struktur Data Menggunakan C++</h3>
+                    <div class="price">130.500 <span>145.000</span></div>
+                    <button id="infoButton" type="button" onclick="location.href='https://www.gramedia.com/products/algoritma-pemrograman-dan-struktur-data-menggunakan-c?queryID=78f430e42b333fdaf295c9bb411a5545'">
+                        more info
+                    </button>
                 </div>
             </div>
             <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
                 <div class="image">
-                    <img src="image/buku-10.png" alt="">
+                    <img src="image/Buku Sakti HTML, CSS & Javascript Pemrograman Web Itu Gampang.png" alt="">
                 </div>
                 <div class="content">
-                    <h3>featured books</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <a href="#" class="btn">add to cart</a>
+                    <h3>Buku Sakti HTML, CSS & Javascript Pemrograman Web Itu Gampang</h3>
+                    <div class="price">60.000 <span> </span></div>
+                    <button id="infoButton" type="button" onclick="location.href='https://www.gramedia.com/products/buku-sakti-html-css-javascript-pemrograman-web-itu-gamp?queryID=d083f18dfe37f80c11cd4fbfeeefe5bf'">
+                        more info
+                    </button>
                 </div>
             </div>
             <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
                 <div class="image">
-                    <img src="image/buku-11.png" alt="">
+                    <img src="image/Data Mining, Algoritma Dan Implementasi.png" alt="">
                 </div>
                 <div class="content">
-                    <h3>featured books</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <a href="#" class="btn">add to cart</a>
+                    <h3>Data Mining, Algoritma Dan Implementasi</h3>
+                    <div class="price">66.600 <span>74.000</span></div>
+                    <button id="infoButton" type="button" onclick="location.href='https://www.gramedia.com/products/data-mining-algoritma-dan-implementasi?queryID=0ec50484f94349ceb437c940b8c75b68'">
+                        more info
+                    </button>
                 </div>
             </div>
             <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
                 <div class="image">
-                    <img src="image/buku-12.png" alt="">
+                    <img src="image/Firebase Membangun Aplikasi Berbasis Android.png" alt="">
                 </div>
                 <div class="content">
-                    <h3>featured books</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <a href="#" class="btn">add to cart</a>
+                    <h3>Firebase Membangun Aplikasi Berbasis Android</h3>
+                    <div class="price">51.300 <span>57.000</span></div>
+                    <button id="infoButton" type="button" onclick="location.href='https://www.gramedia.com/search?q=Firebase%20Membangun%20Aplikasi%20Berbasis%20Android'">
+                        more info
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/Kitab Hacker.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Kitab Hacker</h3>
+                    <div class="price">60.000 <span>75.000</span></div>
+                    <button id="infoButton" type="button" onclick="location.href='https://www.gramedia.com/products/kitab-hacker?queryID=3267c07b9862dd855894f36dd435d0bf'">
+                        more info
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/Koleksi Program Web PHP.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Koleksi Program Web PHP</h3>
+                    <div class="price">576.000 <span>95.000</span></div>
+                    <button id="infoButton" type="button" onclick="location.href='https://www.gramedia.com/products/koleksi-program-web-php?queryID=c75ef7bb02d53629afec4d5726aeead0'">
+                        more info
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/Kumpulan Solusi Pemrograman Python Edisi Revisi.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Kumpulan Solusi Pemrograman Python Edisi Revisi</h3>
+                    <div class="price">120.000 <span></span></div>
+                    <button id="infoButton" type="button" onclick="location.href='https://www.gramedia.com/products/kumpulan-solusi-pemrograman-python-edisi-revisi?queryID=ff64c968e5938ccdbfd1726cace2e0bd'">
+                        more info
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/Lancar Java & Javascript.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Lancar Java & Javascript</h3>
+                    <div class="price">60.000 <span>75.000</span></div>
+                    <button id="infoButton" type="button" onclick="location.href='https://www.gramedia.com/products/lancar-java-dan-javascript?queryID=280343ad9395c6cab79362f9241ae723'">
+                        more info
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/Logika Pemrograman Python.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Logika Pemrograman Python</h3>
+                    <div class="price">112.000 <span>140.000</span></div>
+                    <button id="infoButton" type="button" onclick="location.href='https://www.gramedia.com/products/logika-pemrograman-python?queryID=fbf0f3dfeba618a76caef21431db616e'">
+                        more info
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/Pemrograman Python untuk Penanganan Big Data.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Pemrograman Python untuk Penanganan Big Data</h3>
+                    <div class="price">66.600 <span>74.000</span></div>
+                    <button id="infoButton" type="button" onclick="location.href='https://www.gramedia.com/products/pemrograman-python-untuk-penanganan-big-data?queryID=e03a0336ddefd675c415d2e3231bef8a'">
+                        more info
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/Pengenalan Machine Learning dengan Python.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Pengenalan Machine Learning dengan Python</h3>
+                    <div class="price">68.000 <span>85.000</span></div>
+                    <button id="infoButton" type="button" onclick="location.href='https://www.gramedia.com/products/pengenalan-machine-learning-dengan-python?queryID=4349e8c6b61c7c3a136903acc6d4e67e'">
+                        more info
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/Semua Bisa Menjadi Programmer Python Case Study.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Semua Bisa Menjadi Programmer Python Case Study</h3>
+                    <div class="price">57.600 <span>72.000</span></div>
+                    <button id="infoButton" type="button" onclick="location.href='https://www.gramedia.com/products/semua-bisa-menjadi-programmer-python-case-study?queryID=cf9447b61280c1225621fe0260e91d35'">
+                        more info
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
     </div>
 </section>
-<!-- featured section ends -->
-
-<!-- newsletter section starts -->
-<section class="newsletter">
-    <form action="">
-        <h3>subscribe for latest update</h3>
-        <input type="email" name="" placeholder="enter your email" id="" class="box">
-        <input type="submit" value= "subscribe" class="btn">
-    </form>
-</section>
-<!-- newsletter section ends-->
+<!-- icons section ends -->
 
 <!-- arrivals section starts -->
 <section class="arrivals" id="arrivals">
     <h1 class="heading"> <span>new arrivals</span> </h1>
-    <div class="swiper arrivals-slider">
+    <div class="swiper-container arrivals-slider">
         <div class="swiper-wrapper">
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/buku-13.png.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/buku-14.png.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/buku-15.png.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/buku-16.png.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/buku-17.png.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
         </div>
-    </div>
-    <div class="swiper arrivals-slider">
-        <div class="swiper-wrapper">
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/buku-18.png.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/buku-19.png.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/buku-20.png.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/buku-21.png.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/buku-22.png.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <a href="#" class="swiper-slide box">
+            <div class="image">
+                <img src="image/Belajar Sendiri Mengolah Data Dengan Python Dan Pandas.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Belajar Sendiri Mengolah Data Dengan Python Dan Pandas</h3>
+                <div class="price">52.000 <span>65.000</span></div>
+                <button id="infoButton" type="button" onclick="location.href='https://www.gramedia.com/products/belajar-sendiri-mengolah-data-dengan-python-dan-pandas?queryID=0f717c00519c89f0fe166ef5cf527720'">
+                    more info
+                </button>
+            </div>
+        </a>
     </div>
 </section>
-<!-- arrivals section ends -->
-
-<!-- deal section starts -->
-<section class="deal">
-    <div class="content">
-        <h3>deal of the day</h3>
-        <h1>upto 50% off</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        <a href="#" class="btn">shop now</a>
-    </div>
-    <div class="image">
-        <img src="image/bukudeal.png.png" alt="">
-    </div>
-</section>
-<!-- deal section ends -->
-
-<!-- reviews section starts -->
-<section class="reviews" id="reviews">
-    <h1 class="heading"> <span> client's reviews </span> </h1>
-    <div class="swiper reviews-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide box">
-                <img src="image/pic1.png" alt="">
-                <h3>Orion</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <img src="image/pic2.png" alt="">
-                <h3>Seraphina</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <img src="image/pic3.png" alt="">
-                <h3>Evander</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <img src="image/pic4.png" alt="">
-                <h3>Elowen</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <img src="image/pic5.png" alt="">
-                <h3>Isolde</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- reviews section ends -->
-
-<!-- blogs section starts -->
-<section class="blogs" id="blogs">
-    <h1 class="heading"> <span> our blogs </span> </h1>
-    <div class="swiper blogs-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/blogs1.png" alt="">
-                </div>
-                <div class="content">
-                    <h1>blog title goes here</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/blogs2.png" alt="">
-                </div>
-                <div class="content">
-                    <h1>blog title goes here</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/blogs3.png" alt="">
-                </div>
-                <div class="content">
-                    <h1>blog title goes here</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/blogs4.png" alt="">
-                </div>
-                <div class="content">
-                    <h1>blog title goes here</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/blogs5.png" alt="">
-                </div>
-                <div class="content">
-                    <h1>blog title goes here</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- blogs section ends -->
-
-<!-- footer section starts -->
-<section class="footer">
-    <div class="box-container">
-        <div class="box">
-            <h3>our locations</h3>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> Indonesia </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> Swedia </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> Islandia </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> Norwegia </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> Finlandia </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> Jepang </a>
-        </div>
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> featured </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> arrivals </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> reviews </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> blogs </a>
-        </div>
-        <div class="box">
-            <h3>extra links</h3>
-            <a href="#"> <i class="fas fa-arrow-right"></i> account info </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> ordered items </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> our services </a>
-        </div>
-        <div class="box">
-            <h3>contact info</h3>
-            <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-            <a href="#"> <i class="fas fa-phone"></i> +111-333-5557 </a>
-            <a href="#"> <i class="fas fa-envelope"></i> ssbhsahi@gmail.com </a>
-            <!-- <img src="" alt=""> ini link maps(tp lupa caranya) -->
-        </div>
-    </div>
-    <div class="share">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin"></a>
-        <a href="#" class="fab fa-pinterest"></a>
-    </div>
-</section>
-<!-- footer section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
+    
+            
 
 
 
@@ -585,7 +277,6 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
 <!-- custom js file link  -->
 <script src="script.js"></script>
 
